@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css"
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Nicotine Product Survey Form</h1>
+    <p id="description">Please answer this short survey to help us improve our product</p>
+    <form id="survey-form" method="post">
+      <label id="name-label" for="name">Name <input type="text" name="name" id="name" placeholder="Enter your name" required></label>
+      <label id="email-label" for="email">Email <input type="email" name="email" id="email" placeholder="Enter your email" required> </label>
+      <label id="number-label" for="number">Age <input type="number" name="age" id="number" placeholder="Enter your age" max="120" min="0" required> </label>
+      <label for="dropdown">How would you identify yourself?
+        <select id="dropdown">
+          <option>Select an option</option>
+          <option>Smoker</option>
+          <option>Vape user</option>
+          <option>Non-smoker</option>
+        </select>
+      </label>
+      <div>Would you recommend this product to a friend?</div>
+      <label for="recommend"><input type="radio" id="recommend" name="recommend" class="inline" value="1"> Definitely</label>
+      <label for="recommend"><input type="radio" id="recommend" name="recommend" class="inline" value="2"> Maybe</label>
+      <label for="recommend"><input type="radio" id="recommend" name="recommend" class="inline" value="3"> Not Sure</label>
+      <div>What would you like to see improved? (check all that apply)</div>
+      <label for="improve"><input type="checkbox" id="improve" name="improve" class="inline" value="1"> Taste</label>
+      <label for="improve"><input type="checkbox" id="improve" name="improve" class="inline" value="2"> Strength</label>
+      <label for="improve"><input type="checkbox" id="improve" name="improve" class="inline" value="3"> Size</label>
+      <label for="comments">Any comments or suggestions?
+        <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Enter your comment here..."></textarea>
+      </label>
+      <input type="submit" value="Submit" id="submit">
+    </form>
+  </body>
+
+ <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>
